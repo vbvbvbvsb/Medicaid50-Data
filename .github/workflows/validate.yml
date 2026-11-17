@@ -1,14 +1,67 @@
 name: Validate dataset
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches: ['**']
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: dataset-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test release gates
+        run: python3 scripts/test_check_release.py
+      - name: Check version tag and main history
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: python3 scripts/check_release.py --tag "$RELEASE_TAG"
       - run: python3 scripts/release.py --check
       - run: python3 scripts/release.py --build
+      - name: Confirm build preserved the validated snapshot
+        run: git diff --exit-code
+      - name: Save validated release assets
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+        uses: actions/upload-artifact@v4
+        with:
+          name: dataset-release-${{ github.sha }}
+          path: |
+            dist/Medicaid50-Data-*.zip
+            dist/SHA256SUMS
+            RELEASE_NOTES.md
+          if-no-files-found: error
+          retention-days: 7
+  publish:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dataset-release-${{ github.sha }}
+      - name: Verify downloaded assets
+        working-directory: dist
+        run: sha256sum --check SHA256SUMS
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$RELEASE_TAG" dist/Medicaid50-Data-*.zip dist/SHA256SUMS \
+            --verify-tag --draft --title "Medicaid50 Data $RELEASE_TAG" \
+            --notes-file RELEASE_NOTES.md
+          gh release edit "$RELEASE_TAG" --draft=false --latest
