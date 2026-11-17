@@ -1,0 +1,3 @@
+Temporary branch-protection test.
+This harmless new file intentionally is not added to SHA256SUMS, so validation must fail.
+Close this pull request without merging after confirming the required check blocks merging.
