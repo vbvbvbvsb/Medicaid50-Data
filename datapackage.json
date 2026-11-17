@@ -2,7 +2,7 @@
   "profile": "data-package",
   "name": "medicaid50-data",
   "title": "Medicaid50 Data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sourced Medicaid casualty/TPL reporting directory for 50 states and DC; snapshot packaged 2026-11-16.",
   "homepage": "https://github.com/vbvbvbvsb/Medicaid50-Data",
   "licenses": [

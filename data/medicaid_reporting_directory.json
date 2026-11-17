@@ -73,13 +73,13 @@
       "practitioner_pass_report": "research/document-answer-promotion-2026-11-09/report.md"
     },
     "public_release": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "snapshot_date": "2026-11-16",
       "license": "ODbL-1.0",
       "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
       "publisher": "Possumworks",
       "repository": "https://github.com/vbvbvbvsb/Medicaid50-Data",
-      "attribution": "Medicaid50 Data, Possumworks, version 1.0.0 (2026-11-16), ODbL 1.0.",
+      "attribution": "Medicaid50 Data, Possumworks, version 1.0.1 (2026-11-16), ODbL 1.0.",
       "scope": "Canonical bundled research only; no hosted database edits, reviews or case records.",
       "currency": "Snapshot date is packaging date, not fresh verification of every fact. Preserve per-fact verified_on and per-source reviewed_on dates. Legacy metadata.as_of and edition identify the earlier research baseline."
     }

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this database and retain the ODbL attribution notice."
 type: dataset
 title: "Medicaid50 Data"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-11-16"
 authors:
   - name: "Possumworks"

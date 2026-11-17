@@ -2,7 +2,7 @@
 
 A sourced research database of Medicaid casualty and third-party liability (TPL) reporting routes for personal injury (PI) and workers’ compensation (WC), covering all 50 U.S. states and the District of Columbia.
 
-**Version 1.0.0 · Snapshot packaged November 16, 2026 · [ODbL 1.0](LICENSE)**
+**Version 1.0.1 · Snapshot packaged November 16, 2026 · [ODbL 1.0](LICENSE)**
 
 | Collection | Records |
 | --- | ---: |
@@ -45,7 +45,7 @@ The database is made available under the [Open Data Commons Open Database Licens
 
 Suggested attribution:
 
-> Contains information from [Medicaid50 Data](https://github.com/vbvbvbvsb/Medicaid50-Data), Possumworks, version 1.0.0 (November 16, 2026), made available under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
+> Contains information from [Medicaid50 Data](https://github.com/vbvbvbvsb/Medicaid50-Data), Possumworks, version 1.0.1 (November 16, 2026), made available under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 
 ODbL licenses the database rights held by the licensor. It does not grant rights in third-party websites, forms, documents, correspondence, trademarks or independently copyrighted contents. Links and references identify evidence; they are not claims that the linked material is ODbL licensed. The small validation/export utilities are separately [MIT licensed](LICENSE-CODE).
 

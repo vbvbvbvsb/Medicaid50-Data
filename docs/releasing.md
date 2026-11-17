@@ -7,7 +7,7 @@ Submit changes through a pull request from a topic branch. The required GitHub A
 For a new release, update `metadata.public_release`, README counts/date, `NOTICE`, `CITATION.cff`, `datapackage.json`, provenance, changelog and release notes. Preserve field-level research dates rather than assigning the packaging date to all facts. The ZIP timestamp is fixed for deterministic builds and does not describe research currency.
 
 ```sh
-git switch -c release/v1.0.0
+git switch -c release/v1.0.1
 python3 scripts/release.py --build
 python3 scripts/release.py --check
 git add .
@@ -18,8 +18,8 @@ gh pr checks --watch
 gh pr merge --squash --delete-branch
 git switch main
 git pull --ff-only
-git tag -a v1.0.0 -m "Medicaid50 Data v1.0.0"
-git push origin v1.0.0
+git tag -a v1.0.1 -m "Medicaid50 Data v1.0.1"
+git push origin v1.0.1
 gh run list --workflow validate.yml --limit 5
 ```
 
