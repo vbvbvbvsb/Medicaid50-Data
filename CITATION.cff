@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this database and retain the ODbL attribution notice."
+type: dataset
+title: "Medicaid50 Data"
+version: "1.0.0"
+date-released: "2026-11-16"
+authors:
+  - name: "Possumworks"
+license: ODbL-1.0
+repository-code: "https://github.com/vbvbvbvsb/Medicaid50-Data"
+url: "https://github.com/vbvbvbvsb/Medicaid50-Data"
+abstract: "Sourced Medicaid casualty/TPL reporting routes and scoped practitioner workflows for personal injury and workers compensation across all 50 US states and DC."

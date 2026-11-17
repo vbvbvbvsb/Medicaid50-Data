@@ -1,0 +1,12 @@
+{
+  "jurisdictions": 51,
+  "managed_care_routes": 60,
+  "sources": 436,
+  "portals": 21,
+  "practitioner_questions": 230,
+  "practitioner_answers": 358,
+  "schema": "PASS",
+  "source_references": "PASS",
+  "sensitive_pattern_scan": "PASS",
+  "external_links_reverified": false
+}

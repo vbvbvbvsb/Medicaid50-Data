@@ -1,0 +1,15 @@
+{
+  "release_version": "1.0.0",
+  "snapshot_date": "2026-11-16",
+  "input_sha256": "467cb09a0f6688c8abed8f62edabeb3e80500e6e4d1ee2e864028e51298cdbfb",
+  "input_git_commit": "5f15531c0a0efd2fd81400d4e279eb814f5732c6",
+  "input_dataset_tracked_clean": true,
+  "selection": "Only the canonical JSON and its schema; CSVs freshly generated from released JSON.",
+  "transformations": {
+    "private_source_url_replacements": 45,
+    "capture_paths_removed": 368
+  },
+  "transformations_explained": "Added public-release metadata, removed capture_file paths to omitted evidence files, replaced private portal evidence URLs with public provenance notes. All other canonical values, source IDs, dates, caveats and historical records are retained.",
+  "external_sources_reverified_for_release": false,
+  "hosted_runtime_database_included": false
+}

@@ -1,0 +1,13 @@
+vendor_or_platform,states,role,caution,source_ids
+HMS / Gainwell (observed project branding),AL; AZ; FL; GA; KY; MS; NV; NJ; NY; OH; WI,State/project casualty administration or contacts; Kentucky FFS; Arizona staff referral only; Wisconsin historical handbook contact.,Vendor identification does not verify intake. Different project emails/portals must not be interchanged.,"[""AL1"", ""AZ1"", ""FL1"", ""GA1"", ""KY1"", ""MS1"", ""NV1"", ""NJ1"", ""NY1"", ""OH1"", ""WI1""]"
+SOLARIS PLUS,AL; MS,Expressly identified for new referrals.,No inference that all HMS states migrated to PLUS.,"[""AL1"", ""MS1""]"
+SOLARIS / iDocs / CRUISE,NJ,"Separate case creation, document submission and claim-amount functions.",SOLARIS link failed during test; existing-case tools need the case number.,"[""NJ1""]"
+Katch / Katch IQ,KY; MS; NE; SC,Selected MCO subrogation referrals; see plan matrix.,Preserve exact plan-specific submitreferrals versus subrogationreferrals mailbox.,"[""KY1"", ""MS1"", ""NE3"", ""SC1""]"
+Optum (state-source branding),KY; MS; TN,Selected MCO recovery contacts; Mississippi UHC historical.,Do not normalize away state-source legacy branding or use another project fax.,"[""KY1"", ""MS1"", ""TN1""]"
+Rawlings / Machinify labels,KY; MS; NE; SC,Selected MCO casualty recovery.,"SC labels Machinify (f.k.a. Rawlings), while published mailboxes retain Rawlings branding; other pages retain their own labels.","[""KY1"", ""MS1"", ""NE3"", ""SC1""]"
+Humana,KY; SC,Plan-specific casualty contacts.,Kentucky and South Carolina publish different email addresses.,"[""KY1"", ""SC1""]"
+Claritev / MultiPlan email branding,SC,First Choice by Select Health casualty contact.,Contact directory alone does not establish all new-referral requirements.,"[""SC1""]"
+Benefit Recovery,TN,TennCare state inquiry recipient.,Separate MCO notice is required.,"[""TN1""]"
+Carelon,TN,Wellpoint plan subrogation.,Additional to TennCare state inquiry.,"[""TN1""]"
+VSHP / BlueCare,TN,BlueCare / TennCare Select plan referrals.,Additional to TennCare state inquiry.,"[""TN1""]"
+TMHP / Accenture-hosted Tort Portal,TX,Texas Medicaid tort reporting and claim information.,WC applicability unverified; not evidence of platform availability in another state.,"[""TX1"", ""TX2""]"

@@ -1,0 +1,99 @@
+{
+  "profile": "data-package",
+  "name": "medicaid50-data",
+  "title": "Medicaid50 Data",
+  "version": "1.0.0",
+  "description": "Sourced Medicaid casualty/TPL reporting directory for 50 states and DC; snapshot packaged 2026-11-16.",
+  "homepage": "https://github.com/vbvbvbvsb/Medicaid50-Data",
+  "licenses": [
+    {
+      "name": "ODbL-1.0",
+      "path": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "title": "Open Database License 1.0"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Possumworks",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "directory",
+      "path": "data/medicaid_reporting_directory.json",
+      "format": "json",
+      "mediatype": "application/json"
+    },
+    {
+      "name": "states",
+      "path": "data/csv/states.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "managed-care-routes",
+      "path": "data/csv/managed_care_routes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "portal-directory",
+      "path": "data/csv/portal_directory.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "candidate-portals",
+      "path": "data/csv/candidate_portals.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "verification-queue",
+      "path": "data/csv/verification_queue.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "sources",
+      "path": "data/csv/sources.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "vendor-matrix",
+      "path": "data/csv/vendor_matrix.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "field-level-evidence",
+      "path": "data/csv/field_level_evidence.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "practitioner-questions",
+      "path": "data/csv/practitioner_questions.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "practitioner-answers",
+      "path": "data/csv/practitioner_answers.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    }
+  ]
+}
