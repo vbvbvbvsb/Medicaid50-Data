@@ -60,6 +60,6 @@ python3 scripts/release.py --build
 
 `--check` validates the bundled schema, jurisdiction coverage, source references, supported facts, export consistency, basic sensitive-value patterns and checksums. `--build` regenerates exports and creates a deterministic release ZIP and asset checksums under `dist/`. It does not reverify external facts or establish that the data is free of every possible sensitive value.
 
-A [GitHub Actions validation template](docs/github-actions-validate.yml) is included for installation with a workflow-authorized credential; automatic CI is not enabled in this release.
+[GitHub Actions](https://github.com/vbvbvbvsb/Medicaid50-Data/actions/workflows/validate.yml) validates pushes and pull requests, and supports manual runs. It checks the schema, source references, generated CSVs and checksums, then builds the release archive.
 
 See [data dictionary](docs/data-dictionary.md), [methodology](docs/methodology.md), [contribution guidance](CONTRIBUTING.md), [changelog](CHANGELOG.md), and [release instructions](docs/releasing.md). Report corrections with a source, scope and date; do not include client information.
